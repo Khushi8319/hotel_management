@@ -38,7 +38,7 @@ npm install
 4. Set up your MySQL database and update the connection details in the ".env" file.
 
 5. Run the application locally.
-   
+   
 Project Structure
 HOTEL_MANAGEMENT/
 ├── backend/
