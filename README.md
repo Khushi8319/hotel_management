@@ -78,13 +78,13 @@ Update the values according to your database configuration.
 #### Backend
 
 ```bash
-npm start
+npm run dev
 ```
 
 #### Frontend
 
 ```bash
-npm start
+npm run dev
 ```
 
 ## Deployment
