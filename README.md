@@ -12,8 +12,18 @@ The GrandStay Hotel Management System is a full-stack web application designed t
 ## Tech Stack
 - Frontend: React.js
 - Backend: Node.js, Express.js
-- Database: MySQL
+- Database: MySQL (Aiven Cloud Database)
+- Deployment:
+  - Frontend: Netlify
+  - Backend: Render
+  - Database: Aiven MySQL
 - Version Control: Git & GitHub
+
+## Live Demo
+
+Frontend: https://khushi-hotel-management.netlify.app
+
+Backend API: https://hotel-management-8mwb.onrender.com
 
 ## Installation
 
@@ -45,6 +55,17 @@ npm install
 Set up your MySQL database and update the connection details in the `.env` file.
 
 ### 5. Run the Application
+
+## Deployment
+
+### Frontend
+Deployed on Netlify for fast and reliable static hosting.
+
+### Backend
+Deployed on Render as a Node.js web service.
+
+### Database
+Hosted on Aiven MySQL (Free Tier). The Render backend connects securely to Aiven using SSL.
 
 ## Project Structure
 
