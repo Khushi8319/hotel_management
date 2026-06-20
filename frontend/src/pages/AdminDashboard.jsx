@@ -5,7 +5,7 @@ const AdminDashboard = ({ user, showToast }) => {
   const [newRoom, setNewRoom] = useState({ room_number: '', type: 'Standard', price: '', image: '', description: '', features: '' });
 
   useEffect(() => {
-    fetch('http://localhost:5005/api/bookings')
+    fetch('https://hotel-management-8mwb.onrender.com/api/bookings')
       .then(res => res.json())
       .then(data => setBookings(data))
       .catch(err => console.error(err));
@@ -13,7 +13,7 @@ const AdminDashboard = ({ user, showToast }) => {
 
   const handleAddRoom = (e) => {
     e.preventDefault();
-    fetch('http://localhost:5005/api/rooms', {
+    fetch('https://hotel-management-8mwb.onrender.com/api/rooms', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newRoom)

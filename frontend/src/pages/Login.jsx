@@ -8,7 +8,7 @@ const Login = ({ setUser, showToast }) => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    fetch('http://localhost:5005/api/auth/login', {
+    fetch('https://hotel-management-8mwb.onrender.com/api/auth/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password })

@@ -10,7 +10,7 @@ const RoomDetails = ({ user, showToast }) => {
   const [comment, setComment] = useState('');
 
   const fetchReviews = () => {
-    fetch(`http://localhost:5005/api/reviews/${id}`)
+    fetch(`https://hotel-management-8mwb.onrender.com/api/reviews/${id}`)
       .then(res => res.json())
       .then(data => setReviews(data))
       .catch(err => console.error(err));
@@ -28,7 +28,7 @@ const RoomDetails = ({ user, showToast }) => {
 
     const reviewPayload = { user_id: user.id, room_id: room.id, rating, comment };
     
-    fetch('http://localhost:5005/api/reviews', {
+    fetch('https://hotel-management-8mwb.onrender.com/api/reviews', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(reviewPayload)

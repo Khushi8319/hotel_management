@@ -16,7 +16,7 @@ const Contact = () => {
     e.preventDefault();
     setStatus('Sending...');
     try {
-      const response = await fetch('http://localhost:5005/api/contact', {
+      const response = await fetch('https://hotel-management-8mwb.onrender.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

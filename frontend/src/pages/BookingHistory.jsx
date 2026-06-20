@@ -5,7 +5,7 @@ const BookingHistory = ({ user }) => {
 
 useEffect(() => {
   if (user) {
-    fetch('http://localhost:5005/api/bookings')
+    fetch('https://hotel-management-8mwb.onrender.com/api/bookings')
       .then(res => res.json())
       .then(data => {
         

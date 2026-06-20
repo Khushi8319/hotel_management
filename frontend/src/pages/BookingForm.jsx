@@ -24,7 +24,7 @@ const BookingForm = ({ user, showToast }) => {
       return navigate('/login');
     }
     const payload = { user_id: user.id, room_id: room.id, check_in: checkIn, check_out: checkOut, total_price: calculateTotal() };
-    fetch('http://localhost:5005/api/bookings', {
+    fetch('https://hotel-management-8mwb.onrender.com/api/bookings', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)

@@ -9,7 +9,7 @@ const Rooms = () => {
   const [maxPrice, setMaxPrice] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:5005/api/rooms')
+    axios.get('https://hotel-management-8mwb.onrender.com/api/rooms')
       .then(res => {
         setRooms(res.data);
         setLoading(false);

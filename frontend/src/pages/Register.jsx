@@ -9,7 +9,7 @@ const Register = ({ showToast }) => {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    fetch('http://localhost:5005/api/auth/register', {
+    fetch('https://hotel-management-8mwb.onrender.com/api/auth/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, email, password })
