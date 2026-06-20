@@ -28,11 +28,13 @@ Backend API: https://hotel-management-8mwb.onrender.com
 ## Installation
 
 ### 1. Clone this repository
+
 ```bash
 git clone https://github.com/Khushi8319/hotel_management.git
 ```
 
 ### 2. Navigate to the project folder
+
 ```bash
 cd hotel_management
 ```
@@ -40,21 +42,50 @@ cd hotel_management
 ### 3. Install dependencies
 
 #### Backend
+
 ```bash
 cd backend
 npm install
 ```
 
 #### Frontend
+
 ```bash
 cd frontend
 npm install
 ```
 
 ### 4. Configure Database
-Set up your MySQL database and update the connection details in the `.env` file.
+
+Set up your MySQL database and create a `.env` file in the backend directory.
+
+```env
+PORT=5005
+
+DB_HOST=your_aiven_host
+DB_PORT=your_aiven_port
+DB_USER=your_username
+DB_PASSWORD=your_password
+DB_NAME=your_database_name
+
+JWT_SECRET=your_jwt_secret
+```
+
+Update the values according to your database configuration.
 
 ### 5. Run the Application
+
+#### Backend
+
+```bash
+npm start
+```
+
+#### Frontend
+
+```bash
+npm start
+```
 
 ## Deployment
 
@@ -78,4 +109,5 @@ HOTEL_MANAGEMENT/
 ```
 
 ## Author
+
 **Khushi Rajbhar**
