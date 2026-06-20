@@ -10,8 +10,8 @@ The GrandStay Hotel Management System is a full-stack web application designed t
 - Database Integration: All data is organized within a MySQL database.
 
 ## Tech Stack
-- Frontend: React.js
-- Backend: Node.js, Express.js
+- Frontend: React.js, Vite, React Router DOM, Axios, Tailwind CSS
+- Backend: Node.js, Express.js, CORS, dotenv, MySQL2
 - Database: MySQL (Aiven Cloud Database)
 - Deployment:
   - Frontend: Netlify
@@ -107,6 +107,10 @@ HOTEL_MANAGEMENT/
 ├── .gitignore
 └── README.md
 ```
+## Future Improvements
+- JWT Authentication for secure login
+- Password hashing with bcrypt
+- Payment gateway integration
 
 ## Author
 
