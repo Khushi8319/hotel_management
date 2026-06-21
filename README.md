@@ -4,7 +4,7 @@
 The GrandStay Hotel Management System is a full-stack web application designed to digitize hotel operations, room bookings, and customer management.
 
 ## Features
-- User Authentication: Secure signup and login system.
+- Register and login system.
 - Room Management: Check room availability and details.
 - Booking System: Easy room reservation process for customers.
 - Database Integration: All data is organized within a MySQL database.
@@ -68,7 +68,6 @@ DB_USER=your_username
 DB_PASSWORD=your_password
 DB_NAME=your_database_name
 
-JWT_SECRET=your_jwt_secret
 ```
 
 Update the values according to your database configuration.
